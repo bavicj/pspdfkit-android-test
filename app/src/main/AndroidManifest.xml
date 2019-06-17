@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.camasyssign">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <meta-data
+                android:name="pspdfkit_license_key"
+                android:value="XaGWzRgSVALJQR5WZ8GKnSgwypxFXk1y9ghMsb8PKP-s0lc61U5p9tA_-OE79fD39BMLhfNpZxsT_TfOuuYNOZ9gAtkFLLlflFq_oLre-U2OkAI6EoIsQ89RnI2SHjARai9wDmxq2sx5uh1WPtl3B_NBLzWE1JG-eH7ij04E4DDz7G6y1_BO0nz8N8uOEeJed8Kjk0AnrVF2Ge_G0hY5wpBaobTDwyn-GjC8CEVEX9D5KOC7Tzx0PJ7qSA7wdiijLxrNVh6W5i_DS65ILyIwoOLW8zV18EnajxZwIiY9laWsKqXGzIy7SCYE_h1Z8xL1YNG-vCeMQIEcwLvu-a08X720v592W8tiOQL6FxfztQzZn8g6vDpaAHZBdDhyHqoxeCkyShIkOeP_BhZCIKMOpcmW6ixBX_Ajh3sZidRtraMMrzAciMADSiT2ohFUs3T3"/>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.example.camasyssign.CustomPdfActivity"
+                android:windowSoftInputMode="adjustNothing" />
+    </application>
+
+</manifest>
